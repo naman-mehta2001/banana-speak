@@ -11,6 +11,7 @@
         body{
             margin: 0px;
             font-family: 'Lobster', cursive;
+            text-align: center;
         }
         h1{
             background-color: var(--primarycolor);
@@ -24,6 +25,7 @@
             height: 10vh;
             margin: auto;
             padding: 1rem;
+            margin-bottom: 2rem;
         }
         #output{
             border: 1px solid black;
@@ -36,12 +38,11 @@
             background-color: var(--primarycolor);
             border: 1px solid black;
             padding: 1rem;
-            margin: 2rem;
+            margin: auto;
             font-family: 'Lobster', cursive;
-            margin-left: 8.5rem;
         }
         #out{
-            padding-left: 8.5rem;
+            margin-top: 2rem;
         }
         #output{
             margin-top: 1rem;
@@ -56,6 +57,10 @@
             text-align: center;
             color: black;
         }
+        .btn-div{
+            width: 60%;
+            margin: auto;
+        }
     </style>
     <title>Banana-Speak</title>
 </head>
@@ -63,7 +68,7 @@
     <h1>Talk Banana</h1>
 </body>
 <textarea class="txtarea" placeholder="Type the text in English to translate to Banana" id="txt-input"></textarea>
-<button id="btn-translate">Translate to Banana</button>
+<div class="btn-div"><button id="btn-translate">Translate to Banana</button></div>
 <div id="out" style="font-size: larger;">Output will come here!👇</div>
 <div id="output"></div>
 <footer class="foot">
