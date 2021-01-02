@@ -4,19 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        :root{
+            --primarycolor: #FBBF24;
+        }
+        body{
+            margin: 0px;
+            font-family: 'Lobster', cursive;
+        }
+        h1{
+            background-color: var(--primarycolor);
+            margin-top: 0px;
+            text-align: center;
+            padding: 15px;
+        }
         textarea{
-            width: 90%;
+            width: 60%;
             display:block;
             height: 10vh;
-            margin: 1rem;
+            margin: auto;
             padding: 1rem;
         }
         #output{
             border: 1px solid black;
             height: 10vh;
-            width: 80%;
-            margin: 1rem;
+            width: 60%;
+            margin: auto;
             padding: 1rem;
+        }
+        #btn-translate{
+            background-color: var(--primarycolor);
+            border: 1px solid black;
+            padding: 1rem;
+            margin: 2rem;
+            font-family: 'Lobster', cursive;
+            margin-left: 8.5rem;
+        }
+        #out{
+            padding-left: 8.5rem;
+        }
+        #output{
+            margin-top: 1rem;
+        }
+        .txtarea{
+            font-family: 'Lobster', cursive;
+        }
+        .foot{
+            background-color: var(--primarycolor);
+            padding: 2rem 1rem;
+            text-align: center;
+            color: black;
         }
     </style>
     <title>Banana-Speak</title>
@@ -24,9 +61,13 @@
 <body>
     <h1>Talk Banana</h1>
 </body>
-<textarea placeholder="Type the text in English to translate to Banana" id="txt-input"></textarea>
-<button id="btn-translate">Translate</button>
-<div style="font-size: larger;">Output will come here!👇</div>
+<textarea class="txtarea" placeholder="Type the text in English to translate to Banana" id="txt-input"></textarea>
+<button id="btn-translate">Translate to Banana</button>
+<div id="out" style="font-size: larger;">Output will come here!👇</div>
 <div id="output"></div>
+<footer class="foot">
+    <div style="font-size: 2rem;">About</div>
+    <p>Are you a fan of Minions? Did you know, the gibberish they speak is a whole different language? Use this translator to convert English language to their own "Banana Language"</p>
+</footer>
 <script src="app.js" type="text/javascript" class=""></script>
 </html>
